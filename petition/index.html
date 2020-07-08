@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <title>Protect Black Lives | A collection of resources</title>
+  <meta name="description" content="resources to protect black lives">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/main.scss">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chivo:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body class="fade" data-theme="light" id="body">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#" class="about">About</a></li>
+        <li><a href="../contribute/index.html">Contribute</a></li>
+        <li><a href="../credits/index.html">Credits</a></li>
+      </ul>
+    </nav>
+    <aside id="about">
+      <div class="content-wrapper">
+        <p>Protect Black Lives was created by <a href="https://github.com/emmy-html" target="_blank">Emmy Jordan</a> as a
+          resource to educate and spread awareness regarding the police brutality crisis that affects Black lives
+          worldwide. This website will provide racism on how to combat and educate yourself on the consequences of
+          systemic racism, and police brutality.</p>
+        </div>
+    </aside>
+    <article class="toggle-mode">
+      <p id="light-mode-desc"> </p>
+      <p id="blackout-mode-desc"> </p>
+      <label class="switch">
+        <input type="checkbox" id="themeSwitch">
+        <span class="slider round"></span>
+      </label>
+    </article>
+  </header>
+
+  <main>
+    <section id="hero">
+      <div class="content-wrapper">
+        <article class="content-container">
+          <h1>Protect
+            <span class="black-lives">Black</span>
+            <span>Lives</span>
+          </h1>
+        </article>
+        <aside>
+          <p>An open source collection of resources in the interest of protecting black lives.</p>
+          <p id="update-content">Last Updated on: <span id="date" class="date"></span> by <span id="name" class="name"></span></p> 
+        </aside>
+      </div>
+    </section>
+    <section id="resources">
+      <div class="content-wrapper">
+        <h2>I want to...</h2>
+        <!-- Categories -->
+        <div class="category">
+          <a href="../donate/index.html" class="category-button">Donate</a>
+          <a href="../educate/index.html" class="category-button">Educate</a>
+          <a href="../heal/index.html" class="category-button">Heal</a>
+          <a href="index.html" class="category-button active-cat">Petition</a>
+          <a href="../protest/index.html" class="category-button">Protest</a>
+        </div>
+        <h3>To Seek Justice
+          <span>& Protect Black Lives</span>
+        </h3>
+        <div class="tab-content">
+          <!-- Petition filters -->
+          <article>
+            <h4>Filter by <span>Topic</span></h4>
+            <div class="filter-buttons">
+              <button class="btn active-filter" id="default" onclick="findTag('all')">Show all</button>
+              <button class="btn" onclick="findTag('lgbtqia-petition')">LGBTQIA+</button>
+              <button class="btn" onclick="findTag('petition-megalist')">Petition Mega List</button>
+              <button class="btn" onclick="findTag('police-brutality')">Police Brutality</button>
+            </div>
+          </article>
+          <article>
+            <!-- Petition Resources -->
+            <div class="filter-content-container">
+              <p class="filterLink petition-megalist police-brutality">
+                <a href="https://docs.google.com/document/d/1NvDKQRNHm1bZRR6Ods6jBygH8EMgQTm6lrof9PuAi58/edit?usp=sharing" target="_blank">
+                 Petitions That Still Haven't Met Their Goals (Continuously Updated)</a>
+                <span class="btn tags" onclick="findTag('petition-megalist')">Petition Mega List</span>
+                <span class="btn tags" onclick="findTag('police-brutality')">Police Brutality</span>
+              </p>
+              <p class="filterLink lgbtqia-petition petition-megalist">
+                <a href="https://trans--rights.carrd.co/" target="_blank">
+                 List of Petitions for Trans Rights</a>
+                <span class="btn tags" onclick="findTag('lgbtqia-petition')">LGBTQIA+</span>
+                <span class="btn tags" onclick="findTag('petition-megalist')">Petition Mega List</span>
+                <span class="btn tags" onclick="findTag('police-brutality')">Police Brutality</span>
+              </p>
+              <p class="filterLink petition-megalist police-brutality">
+                <a href="https://twitter.com/3o5KD/status/1273825129974370304" target="_blank">
+                  Petitions That Still Need Signatures</a>
+                <span class="btn tags" onclick="findTag('petition-megalist')">Petition Mega List</span>
+                <span class="btn tags" onclick="findTag('police-brutality')">Police Brutality</span>
+              </p>
+              <p class="filterLink lgbtqia-petition petition-megalist">
+                <a href="https://twitter.com/L0V3WRM/status/1271683044664115200" target="_blank">
+                  A thread of LGBTQIA+ Related Petitions</a>
+                <span class="btn tags" onclick="findTag('lgbtqia-petition')">LGBTQIA+</span>
+                <span class="btn tags" onclick="findTag('petition-megalist')">Petition Mega List</span>
+              </p>
+              <p class="filterLink petition-megalist">
+                <a href="https://twitter.com/homewithzouis/status/1275545161376903168" target="_blank">
+                  A thread of Petitions and Carrds</a>
+                <span class="btn tags" onclick="findTag('petition-megalist')">Petition Mega List</span>
+              </p>
+              <p class="filterLink petition-megalist">
+                <a href="https://twitter.com/CorbynistaTeen/status/1273696551383322624" target="_blank">
+                  A thread of Ongoing Petitions for Black Lives in the UK</a>
+                <span class="btn tags" onclick="findTag('petition-megalist')">Petition Mega List</span>
+              </p>
+              <p class="filterLink petition-megalist police-brutality">
+                <a href="https://twitter.com/twoghostsslou/status/1275533853239717901" target="_blank">
+                  A Thread of Ongoing Petitions for Black Lives via @twoghostsslou</a>
+                <span class="btn tags" onclick="findTag('petition-megalist')">Petition Mega List</span>
+                <span class="btn tags" onclick="findTag('police-brutality')">Police Brutality</span>
+              </p>
+              <p class="filterLink petition-megalist police-brutality">
+                <a href="https://twitter.com/blazedbxtch/status/1266823422337835008" target="_blank">
+                  A Thread of Ongoing Petitions for Black Lives via @blazedbxtch</a>
+                <span class="btn tags" onclick="findTag('petition-megalist')">Petition Mega List</span>
+                <span class="btn tags" onclick="findTag('police-brutality')">Police Brutality</span>
+              </p>
+              <p class="filterLink police-brutality">
+                <a href="http://chng.it/fvztBTGsKQ" target="_blank">Reopen the Investigation Into the Murder of Lionel
+                  G. Lewis</a>
+                <span class="btn tags" onclick="findTag('police-brutality')">Police Brutality</span>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div id="contribute">
+      <div class="content-wrapper">
+        <article>
+          <h2>Want to
+            <span>
+              <a href="../contribute/index.html">contribute?</a>
+            </span>
+          </h2>
+          <p>Protect Black Lives is an open source project, meaning we would love
+            any and all contributions! If you have a resource that isn't listed that
+            you would like to add, you can read <a href="../contribute/index.html">more</a>
+            about how to contribute, even if you don't know how to code!</p>
+        </article>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/plugins.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/filter.js"></script>
+</body>
+
+</html>

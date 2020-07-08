@@ -1,0 +1,158 @@
+@import "variables";
+@mixin link-transition {
+    -webkit-transition: 1s color;
+    transition: 1s color;
+}
+$teal-border: 2px solid $light-teal;
+
+body[data-theme="dark"] {
+    /* Universal Styles */ 
+    background: $black;
+    color: $white;
+    a:link,
+    a:visited {
+        color: $white;
+    }
+    a:hover {
+        border-bottom: $teal-border;
+        color: $purple;
+        @include link-transition;
+    }
+    /* Active Navigation Link */
+    .active-nav {
+        border-bottom: $teal-border;
+        color: $purple;
+        &:visited {
+            color: $purple;
+        }
+    }
+    h2 {
+        color: $purple;
+    }
+    h3 {
+        color: $light-teal;
+    }
+    b {
+        color: $light-teal;
+    }
+    .code-sample {
+        color: $purple;
+    }
+    /* Toggle Switch */
+    header {
+        .toggle-mode {
+            #light-mode-desc::before {
+                display: none;
+              }
+            #blackout-mode-desc::before {
+                content: "Blackout Mode";
+                width: 100%;
+            }
+        }
+    }
+    /* Hero */ 
+    #hero {
+        .content-container {
+            border: 10px solid $teal;
+            span.black-lives {
+                color: $purple;
+            }
+        }
+    /* Last Updated by Section */
+    #update-content {
+        text-transform: uppercase;
+        .date {
+            color: $light-teal;
+            font-weight: $bold;
+        }
+        .name {
+            color: $purple;
+            font-weight: $bold;
+        }
+        }
+    }
+    /* Resources Tabs */
+    #resources {
+        /* The Categories */
+        .category {
+            background: none;
+            overflow: hidden;
+        }
+        /* Category buttons */
+        .category-button:hover {
+            background-color: $light-teal;
+            color: $black;
+        }
+        /* Changes color depending on active page */
+        .category-button.active-cat {
+            background: $teal;
+            color: $black;
+            &:hover {
+                background: $purple;
+                color: $black;
+            }
+        }
+        /* Description beneath categories */
+        h3 {
+            color: $purple;
+        }
+        .tab-content {
+            h3 {
+                color: $purple;
+            }
+            h4 {
+                span {
+                    color: $light-teal;
+                }
+            }
+            .tags {
+                color: $black;
+            }
+            span.tags {
+                &:nth-of-type(even) {
+                    background: $purple;
+                    color: $black;
+                }
+                &:nth-of-type(odd) {
+                    background: $teal;
+                    color: $black;
+                }
+            }
+            /* Filter buttons */ 
+            .btn {
+                background: $purple;
+                color: $black;
+            }
+            .btn:hover {
+                background: $purple;
+            }
+            .btn:not(.active-filter) {
+                color: $black;
+                &:hover {
+                    background: $light-teal;
+                    color: $black;
+                    opacity: 1;
+                }
+            }
+            .btn.active-filter {
+                background: $teal;
+                color: $black;
+                &:hover {
+                    background: $light-teal;
+                }
+            }
+        }
+    }
+    /* Contribution Section */
+    #contribute {
+        span {
+            a:link,
+            a:visited {
+              color: $teal;
+            }
+            a:hover {
+              color: $light-teal;
+            }
+          }
+    }
+}

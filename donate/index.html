@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <title>Protect Black Lives | A collection of resources</title>
+  <meta name="description" content="resources to protect black lives">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/main.scss">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chivo:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body class="fade" data-theme="light" id="body">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#" class="about">About</a></li>
+        <li><a href="../contribute/index.html">Contribute</a></li>
+        <li><a href="../credits/index.html">Credits</a></li>
+      </ul>
+    </nav>
+    <aside id="about">
+      <div class="content-wrapper">
+        <p>Protect Black Lives was created by <a href="https://github.com/emmy-html" target="_blank">Emmy Jordan</a> as a
+          resource to educate and spread awareness regarding the police brutality crisis that affects Black lives
+          worldwide. This website will provide racism on how to combat and educate yourself on the consequences of
+          systemic racism, and police brutality.</p>
+      </div>
+    </aside>
+    <article class="toggle-mode">
+      <p id="light-mode-desc"> </p>
+      <p id="blackout-mode-desc"> </p>
+      <label class="switch">
+        <input type="checkbox" id="themeSwitch">
+        <span class="slider round"></span>
+      </label>
+    </article>
+  </header>
+
+  <main>
+    <section id="hero">
+      <div class="content-wrapper">
+        <article class="content-container">
+          <h1>Protect
+            <span class="black-lives">Black</span>
+            <span>Lives</span>
+          </h1>
+        </article>
+        <aside>
+          <p>An open source collection of resources in the interest of protecting black lives.</p>
+          <p id="update-content">Last Updated on: <span id="date" class="date"></span> by <span id="name" class="name"></span></p> 
+        </aside>
+      </div>
+    </section>
+    <section id="resources">
+      <div class="content-wrapper">
+        <h2>I want to...</h2>
+        <!-- Categories -->
+        <div class="category">
+          <a href="index.html" class="category-button active-cat">Donate</a>
+          <a href="../educate/index.html" class="category-button">Educate</a>
+          <a href="../heal/index.html" class="category-button">Heal</a>
+          <a href="../petition/index.html" class="category-button">Petition</a>
+          <a href="../protest/index.html" class="category-button">Protest</a>
+        </div>
+        <h3>In Support of Black Lives</h3>
+        <div class="tab-content">
+          <article>
+          <!-- Donation Tag Filters -->
+          <h4>Filter by <span>Topic</span></h4>
+          <div class="filter-buttons">
+            <button class="btn active-filter" id="default" onclick="filterSelection('all')">Show all</button>
+            <button class="btn" onclick="filterSelection('lgbtqia')">LGBTQIA+</button>
+            <button class="btn" onclick="filterSelection('artists')">Artists</button>
+            <button class="btn" onclick="filterSelection('bail-funds')">Bail Funds</button>
+            <button class="btn" onclick="filterSelection('black-biz')">Black Business</button>
+            <button class="btn" onclick="filterSelection('covid')">COVID-19 Relief</button>
+            <button class="btn" onclick="filterSelection('crowd-source')">Crowd Sourcing</button>
+            <button class="btn" onclick="filterSelection('donation-megalist')">Mega List</button>
+            <button class="btn" onclick="filterSelection('orgs')">Organizations</button>
+          </div>
+        </article>
+        <article>
+          <!-- Donation Resources -->
+          <div class="filter-content-container">
+            <p class="filterLink crowd-source lgbtqia">
+              <a href="https://houseoftulip.org/" target="_blank">
+                House of Tulip - Housing for TGNC Folks</a>
+                <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+                <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+            </p>
+            <p class="filterLink crowd-source lgbtqia">
+              <a href="https://gf.me/u/ycdqnp" target="_blank">
+                Support Black Trans Elders</a>
+                <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+                <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+            </p>
+            <p class="filterLink crowd-source lgbtqia covid">
+              <a href="https://app.moonclerk.com/c/h27chmplg" target="_blank">
+                Appolition Fund</a>
+                <span class="btn tags" onclick="findTag('crowd-source')">COVID-19 Relief</span>
+                <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+                <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+            </p>
+            <p class="filterLink crowd-source lgbtqia">
+              <a href="https://gf.me/u/ycbwv4" target="_blank">
+                Black Trans Lives Matter Youth Fund</a>
+                <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+                <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+            </p>
+            <p class="filterLink crowd-source">
+              <a href="https://gf.me/u/x8qv9x" target="_blank">
+                Dafonte Miller Recovery Fund</a> |
+              <a href="https://www.durhamregion.com/news-story/10039030-dafonte-miller-case-judge-delivering-verdict-this-morning/" target="_blank">
+                His Story</a>
+                <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+            </p>
+            <p class="filterLink crowd-source">
+              <a href="https://gf.me/u/x9mfbs" target="_blank">
+                Oluwatoyin 'Toyin' Salau Scholarship Fund</a>
+                <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+            </p>
+            <p class="filterLink lgbtqia donation-megalist crowd-source">
+              <a href="https://twitter.com/Iuzers/status/1274681005132169216" target="_blank">
+                Thread of Black LGBTQIA+ GoFundMe's That Haven't Reached Their Goal</a>
+                <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+                <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+                <span class="btn tags" onclick="findTag('donation-megalist')">Mega List</span>
+            </p>
+            <p class="filterLink lgbtqia donation-megalist crowd-source">
+              <a href="https://twitter.com/lesbvmk/status/1273476048865329152" target="_blank">
+                Thread of GoFundMe's for Black Trans Women</a>
+                <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+                <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+                <span class="btn tags" onclick="findTag('donation-megalist')">Mega List</span>
+            </p>
+            <p class="filterLink bail-funds donation-megalist crowd-source orgs">
+              <a href="https://twitter.com/hesgoldnmoon/status/1275643700882931714" target="_blank">
+                List of Organizations & Bail Funds for Protestors in the US</a>
+                <span class="btn tags" onclick="findTag('bail-funds')">Bail Funds</span>
+                <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+                <span class="btn tags" onclick="findTag('donation-megalist')">Mega List</span>
+                <span class="btn tags" onclick="findTag('orgs')">Organizations</span>
+            </p>
+            <p class="filterLink crowd-source">
+              <a href="https://gf.me/u/x5g5vw" target="_blank">
+                GoFundMe on behalf of Elijah McClain</a>
+                <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+            </p>
+            <p class="filterLink crowd-source lgbtqia donation-megalist">
+              <a href="https://docs.google.com/document/d/1jY-57-bl6TB4d4rFJ3Wpr6Gnm48Fb4YcjLDpAbsjRtY/mobilebasic" target="_blank">
+                Black Trans + Non-Binary Funds</a>
+                <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+                <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+                <span class="btn tags" onclick="findTag('donation-megalist')">Mega List</span>
+            </p>
+            <p class="filterLink bail-funds donation-megalist orgs">
+              <a href="https://www.communityjusticeexchange.org/nbfn-directory#washington" target="_blank">
+                National Bail Fund Network Directory</a>
+                <span class="btn tags" onclick="findTag('bail-funds')">Bail Funds</span>
+                <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+                <span class="btn tags" onclick="findTag('donation-megalist')">Mega List</span>
+                <span class="btn tags" onclick="findTag('orgs')">Organizations</span>
+            </p>
+            <p class="filterLink lgbtqia+ donation-megalist orgs">
+              <a href="https://twitter.com/planet_eros/status/1273833044768669699" target="_blank">
+                Thread of Black Trans Transition GoFundMe's</a>
+                <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+                <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+                <span class="btn tags" onclick="findTag('donation-megalist')">Mega List</span>
+            </p>
+            <p class="filterLink lgbtqia+ crowd-source orgs">
+              <a href="https://www.glitsinc.org/donations" target="_blank">
+                G.L.I.T.S - Gays and Lesbians Living In A Transgender Society</a>
+                <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+                <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+                <span class="btn tags" onclick="findTag('orgs')">Organizations</span>
+            </p>
+            <p class="filterLink covid crowd-source">
+              <a href="https://gf.me/u/x8s64z" target="_blank">
+                Robert Andrew's Memorial Cost</a>
+                <span class="btn tags" onclick="findTag('covid')">COVID-19 Relief</span>
+                <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+            </p>
+            <p class="filterLink crowd-source lgbtqia orgs">
+              <a href="https://www.blacktranstravelfund.com/donate" target="_blank">
+                Black Trans Travel Fund</a>
+                <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+              <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+              <span class="btn tags" onclick="findTag('orgs')">Organizations</span>
+            </p>
+            <p class="filterLink lgbtqia orgs">
+              <a href="https://marshap.org/" target="_blank">
+                The Marsha P. Johnson Institute</a>
+              <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+              <span class="btn tags" onclick="findTag('orgs')">Organizations</span>
+            </p>
+            <p class="filterLink artists lgbtqia crowd-source orgs">
+              <a href="https://linktr.ee/btfacollective" target="_blank">
+                Black Trans Femme Artists Collective</a>
+              <span class="btn tags" onclick="findTag('artists')">Artists</span>
+              <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+              <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+              <span class="btn tags" onclick="findTag('orgs')">Organizations</span>
+            </p>
+            <p class="filterLink lgbtqia crowd-source orgs">
+              <a href="https://www.transjusticefundingproject.org/" target="_blank">
+                Trans Justice Funding Project</a>
+              <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+              <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+              <span class="btn tags" onclick="findTag('orgs')">Organizations</span>
+            </p>
+            <p class="filterLink lgbtqia crowd-source orgs">
+              <a href="https://www.transgenderdistrictsf.com/donate" target="_blank">
+                The Transgender District San Francisco</a>
+              <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+              <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+              <span class="btn tags" onclick="findTag('orgs')">Organizations</span>
+            </p>
+            <p class="filterLink lgbtqia crowd-source">
+              <a href="https://gf.me/u/x3kh8h" target="_blank">
+                Homeless Black Trans Women Fund</a>
+              <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+              <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+            </p>
+            <p class="filterLink artists lgbtqia crowd-source">
+              <a href="https://www.bonfire.com/store/softprints/" target="_blank">Grayson, Trans Artist, Crowd Funding Top Surgery with Their Original Art</a>
+              <span class="btn tags" onclick="findTag('artists')">Artists</span>
+              <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+              <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+            </p>
+            <p class="filterLink lgbtqia crowd-source">
+              <a href="https://gf.me/u/x9n66q" target="_blank">Dahlia's Transition Fund</a>
+              <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+              <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+            </p>
+            <p class="filterLink lgbtqia crowd-source">
+              <a href="https://gf.me/u/x9dm4f" target="_blank">Black Trans Education Form</a>
+              <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+              <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+            </p>
+            <p class="filterLink lgbtqia donation-megalist">
+              <a href="https://twitter.com/lesbvmk/status/1273476048865329152" target="_blank">Black Trans Women
+                GoFundMe Megalist</a>
+              <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+              <span class="btn tags" onclick="findTag('donation-megalist')">Mega List</span>
+            </p>
+            <p class="filterLink lgbtqia crowd-source">
+              <a href="https://gf.me/u/x8zf92" target="_blank">20 Tiny Homes for Trans Women</a>
+              <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+              <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+            </p>
+            <p class="filterLink lgbtqia orgs">
+              <a href="https://www.blackvisionsmn.org/" target="_blank">Black Visions Collective</a>
+              <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+              <span class="btn tags" onclick="findTag('orgs')">Organizations</span>
+            </p>
+            <p class="filterLink bail-funds black-biz crowd-source donation-megalist">
+              <a href="https://twitter.com/s4hia/status/1267690972227526656" target="_blank">Bail Funds, Black
+                Individuals & Small Businesses In Need</a>
+              <span class="btn tags" onclick="findTag('bail-funds')">Bail Funds</span>
+              <span class="btn tags" onclick="findTag('black-biz')">Black Business</span>
+              <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+              <span class="btn tags" onclick="findTag('donation-megalist')">Mega List</span>
+            </p>
+            <p class="filterLink bail-funds donation-megalist">
+              <b>Bail Funds & Legal Funds by City</b>
+              <a href="https://twitter.com/Fumi_chun/status/1270420836172705792" target="_blank">Part One</a> | <a
+                href="https://twitter.com/Fumi_chun/status/1270424059315027970" target="_blank">Part Two</a>
+              <span class="btn tags" onclick="findTag('bail-funds')">Bail Funds</span>
+              <span class="btn tags" onclick="findTag('donation-megalist')">Mega List</span>
+            </p>
+            <p class="filterLink donation-megalist">
+              <a href="https://docs.google.com/document/d/1-0KC83vYfVQ-2freQveH43PWxuab2uWDEGolzrNoIks/edit#heading=h.c0pszbm7zg89"
+                target="_blank">Black Lives Matter Mega Document</a>
+              <span class="btn tags" onclick="findTag('donation-megalist')">Mega List</span>
+            </p>
+            <p class="filterLink bail-funds donation-megalist">
+              <a href="https://twitter.com/costarastrology/status/1266393495260008448" target="_blank">Bail Funds by
+                City</a>
+              <span class="btn tags" onclick="findTag('bail-funds')">Bail Funds</span>
+              <span class="btn tags" onclick="findTag('donation-megalist')">Mega List</span>
+            </p>
+            <p class="filterLink lgbtqia donation-megalist">
+              <a href="https://twitter.com/Fumi_chun/status/1270078363210625032" target="_blank">Trans Funds &
+                Resources</a>
+              <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+              <span class="btn tags" onclick="findTag('donation-megalist')">Mega List</span>
+            </p>
+          </div>
+        </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div id="contribute">
+      <div class="content-wrapper">
+        <article>
+          <h2>Want to
+            <span>
+              <a href="../contribute/index.html">contribute?</a>
+            </span>
+          </h2>
+          <p>Protect Black Lives is an open source project, meaning we would love
+            any and all contributions! If you have a resource that isn't listed that
+            you would like to add, you can read <a href="../contribute/index.html">more</a>
+            about how to contribute, even if you don't know how to code!</p>
+        </article>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/plugins.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/filter.js"></script>
+</body>
+
+</html>

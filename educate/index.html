@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <title>Protect Black Lives | A collection of resources</title>
+  <meta name="description" content="resources to protect black lives">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/main.scss">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chivo:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body class="fade" data-theme="light" id="body">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#" class="about">About</a></li>
+        <li><a href="../contribute/index.html">Contribute</a></li>
+        <li><a href="../credits/index.html">Credits</a></li>
+      </ul>
+    </nav>
+    <aside id="about">
+      <div class="content-wrapper">
+        <p>Protect Black Lives was created by <a href="https://github.com/emmy-html" target="_blank">Emmy Jordan</a> as a resource to educate and spread awareness regarding the police brutality crisis that affects Black lives worldwide. This website will provide racism on how to combat and educate yourself on the consequences of systemic racism, and police brutality.</p>
+      </div>
+    </aside>
+    <article class="toggle-mode">
+      <p id="light-mode-desc"> </p>
+      <p id="blackout-mode-desc"> </p>
+      <label class="switch">
+        <input type="checkbox" id="themeSwitch">
+        <span class="slider round"></span>
+      </label>
+    </article>
+  </header>
+
+  <main>
+    <section id="hero">
+      <div class="content-wrapper">
+        <article class="content-container">
+          <h1>Protect
+            <span class="black-lives">Black</span>
+            <span>Lives</span>
+          </h1>
+        </article>
+        <aside>
+          <p>An open source collection of resources in the interest of protecting black lives.</p>
+          <p id="update-content">Last Updated on: <span id="date" class="date"></span> by <span id="name" class="name"></span></p>
+        </aside>
+      </div>
+    </section>
+    <section id="resources">
+      <div class="content-wrapper">
+        <h2>I want to...</h2>
+        <!-- Categories -->
+        <div class="category">
+            <a href="../donate/index.html" class="category-button">Donate</a>
+            <a href="index.html" class="category-button active-cat">Educate</a>
+            <a href="../heal/index.html" class="category-button">Heal</a>
+            <a href="../petition/index.html" class="category-button">Petition</a>
+            <a href="../protest/index.html" class="category-button">Protest</a>
+        </div>
+        <h3>Myself & others
+        </h3>
+        <div class="tab-content">
+          <article>
+            <!-- Education Tag Filters -->
+          <h4>Filter by <span>Topic</span></h4>
+              <div class="filter-buttons">
+                <button class="btn active-filter" id="default" onclick="findTag('all')">Show all</button>
+                <button class="btn" onclick="findTag('abolition')">Abolition</button>
+                <button class="btn" onclick="findTag('accessible-education')">Accessible</button>
+                <button class="btn" onclick="findTag('black-fem')">Black Feminist Spotlight</button>
+                <button class="btn" onclick="findTag('books')">Books</button>
+                <button class="btn" onclick="findTag('education-system')">Education System</button>
+                <button class="btn" onclick="findTag('entertainment')">Entertainment Industry</button>
+                <button class="btn" onclick="findTag('education-megalist')">Mega List</button>
+                <button class="btn" onclick="findTag('organize')">Organizing</button>
+                <button class="btn" onclick="findTag('speech')">Speeches</button>
+                <button class="btn" onclick="findTag('systemic-racism')">Systemic Racism</button>
+              </div>
+            </article>
+            <article>
+              <!-- Education Resources-->
+              <div class="filter-content-container">
+                <p class="filterLink abolition accessible-education black-fem books education-megalist systemic-racism">
+                  <a href="https://twitter.com/queersocialism/status/1182034098426204161" target="_blank">
+                   160+ Texts on Black Radicalism, Racial Capitalism, Imperialism, Gender & Sexuality Studies, Women's Oppression etc.</a>
+                   <span class="btn tags" onclick="findTag('abolition')">Abolition</span>
+                   <span class="btn tags" onclick="findTag('accessible-education')">Accessible</span>
+                   <span class="btn tags" onclick="findTag('black-fem')">Black Feminist Spotlight</span>
+                  <span class="btn tags" onclick="findTag('books')">Books</span>
+                  <span class="btn tags" onclick="findTag('education-megalist')">Megalist</span>
+                  <span class="btn tags" onclick="findTag('systemic-racism')">Systemic Racism</span>
+                </p>
+                <p class="filterLink accessible-education entertainment">
+                  <a href="https://www.newyorker.com/culture/cultural-comment/the-messy-politics-of-black-voices-and-black-voice-in-american-animation" target="_blank">
+                   The Messy Politics of Black Voices - And "Black Voice" In American Animation</a>
+                  <span class="btn tags" onclick="findTag('accessible-education')">Accessible</span>
+                  <span class="btn tags" onclick="findTag('entertainment')">Entertainment Industry</span>
+                </p>
+                <p class="filterLink accessible-education abolition">
+                  <a href="https://youtu.be/QfSm7JDhGL4" target="_blank">
+                   Abolition Can't Wait: A Teach in with #8toAbolition</a>
+                  <span class="btn tags" onclick="findTag('accessible-education')">Accessible</span>
+                  <span class="btn tags" onclick="findTag('abolition')">Abolition</span>
+                </p>
+                <p class="filterLink books black-fem education-megalist systemic-racism">
+                  <a href="https://juneteenth-at-webflow.webflow.io/" target="_blank">
+                    Juneteenth Education Resources via WebFlow</a>
+                  <span class="btn tags" onclick="findTag('black-fem')">Black Feminist Spotlight</span>
+                  <span class="btn tags" onclick="findTag('books')">Books</span>
+                  <span class="btn tags" onclick="findTag('education-megalist')">Mega List</span>
+                  <span class="btn tags" onclick="findTag('systemic-racism')">Systemic Racism</span>
+                </p>
+                <p class="filterLink books black-fem education-megalist">
+                  <a href="https://www.msn.com/en-us/health/wellness/8-powerful-books-that-center-black-womens-health/ss-BB15IScr#interstitial=1" target="_blank">
+                    8 Powerful Books That Center Black Women's Health</a>
+                  <span class="btn tags" onclick="findTag('black-fem')">Black Feminist Spotlight</span>
+                  <span class="btn tags" onclick="findTag('books')">Books</span>
+                  <span class="btn tags" onclick="findTag('education-megalist')">Mega List</span>
+                </p>
+                <p class="filterLink abolition books black-fem education-megalist education-system">
+                  <a href="https://www.glamour.com/story/antiracism-books-according-to-black-women" target="_blank">
+                    13 Books to Educate Yourself on Antiracism, According to Black Women</a>
+                  <span class="btn tags" onclick="findTag('abolition')">Abolition</span>
+                  <span class="btn tags" onclick="findTag('black-fem')">Black Feminist Spotlight</span>
+                  <span class="btn tags" onclick="findTag('books')">Books</span>
+                  <span class="btn tags" onclick="findTag('education-system')">Education System</span>
+                  <span class="btn tags" onclick="findTag('education-megalist')">Mega List</span>
+                </p>
+                <p class="filterLink books black-fem education-megalist organize education-system">
+                  <a href="https://www.vogue.com/article/kalima-desuze-cafe-con-libros-black-feminist-books" target="_blank">Kalima DeSuze's Black Feminist Reading List</a>
+                  <span class="btn tags" onclick="findTag('black-fem')">Black Feminist Spotlight</span>
+                  <span class="btn tags" onclick="findTag('books')">Books</span>
+                  <span class="btn tags" onclick="findTag('education-system')">Education System</span>
+                  <span class="btn tags" onclick="findTag('education-megalist')">Mega List</span>
+                  <span class="btn tags" onclick="findTag('organize')">Organizing</span>
+                </p>
+                <p class="filterLink abolition">
+                  <a href="https://www.8toabolition.com/" target="_blank">8toAbolition</a>
+                  <span class="btn tags" onclick="findTag('abolition')">Abolition</span>
+                </p>
+                <p class="filterLink black-fem">
+                  <a href="https://radicalreads.com/angela-davis-favorite-books/" target="_blank">Angela Davis' Favorite Books</a> via Radical Reads
+                  <span class="btn tags" onclick="findTag('black-fem')">Black Feminist Spotlight</span>
+                </p>
+                <p class="filterLink abolition black-fem">
+                  <a href="https://www.oprahmag.com/entertainment/books/g32803115/angela-davis-books/" target="_blank">9 Essential Angela Davis Books to Add to Your Shelf</a>
+                  <span class="btn tags" onclick="findTag('abolition')">Abolition</span>
+                  <span class="btn tags" onclick="findTag('orgs')">Black Feminist Spotlight</span> 
+                </p>
+                <p class="filterLink black-fem books">
+                  <a href="https://www.okayafrica.com/black-revolutionary-literature-books/" target="_blank">13 Books On Black Resistance & Revolution</a>
+                  <span class="btn tags" onclick="findTag('black-fem')">Black Feminist Spotlight</span> 
+                  <span class="btn tags" onclick="findTag('books')">Books</span>
+                </p>
+                <p class="filterLink accessible-education black-fem books">
+                  <a href="https://twitter.com/sarphrodite/status/1268254992873467904" target="_blank">Book Reccomendations With Text PDF</a>
+                  <span class="btn tags" onclick="findTag('accessible-education')">Accessible</span>
+                  <span class="btn tags" onclick="findTag('black-fem')">Black Feminist Spotlight</span> 
+                  <span class="btn tags" onclick="findTag('books')">Books</span>
+                  <span class="btn tags" onclick="findTag('speech')">Speech</span> 
+                </p>
+                <p class="filterLink abolition accessible-education black-fem speech">
+                  <a href="https://open.spotify.com/playlist/0CmjOgMVAw4N8f08qUVHbJ?si=VEXo5r3pSjKAm2TeZTnMhw">Angela Davis Speeches & Interviews Spotify Playlist</a>
+                  <span class="btn tags" onclick="findTag('abolition')">Abolition</span>
+                  <span class="btn tags" onclick="findTag('accessible-education')">Accessible</span>
+                  <span class="btn tags" onclick="findTag('black-fem')">Black Feminist Spotlight</span> 
+                  <span class="btn tags" onclick="findTag('speech')">Speeches</span> 
+                </p>
+                <p class="filterLink accessible-education black-fem speech">
+                  <a href="https://open.spotify.com/playlist/0J5GVYMrT8wbAkaNbIcCLN?si=Rju-o1cKTE6YJo5M5-qr-A">Revolution Playlist by Rachel Cargle</a>
+                  <span class="btn tags" onclick="findTag('accessible-education')">Accessible</span>
+                  <span class="btn tags" onclick="findTag('black-fem')">Black Feminist Spotlight</span> 
+                  <span class="btn tags" onclick="findTag('speech')">Speeches</span>
+                </p> 
+              </div>
+            </article>
+          </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div id="contribute">
+      <div class="content-wrapper">
+        <article>
+          <h2>Want to
+            <span>
+              <a href="../contribute/index.html">contribute?</a>
+            </span>
+          </h2>
+          <p>Protect Black Lives is an open source project, meaning we would love
+            any and all contributions! If you have a resource that isn't listed that
+            you would like to add, you can read <a href="../contribute/index.html">more</a>
+            about how to contribute, even if you don't know how to code!</p>
+        </article>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/plugins.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/filter.js"></script>
+</body>
+
+</html>

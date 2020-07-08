@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <title>Protect Black Lives | A collection of resources</title>
+  <meta name="description" content="resources to protect black lives">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/main.scss">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chivo:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body class="fade" data-theme="light" id="body">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#" class="about">About</a></li>
+        <li><a href="../contribute/index.html">Contribute</a></li>
+        <li><a href="../credits/index.html">Credits</a></li>
+      </ul>
+    </nav>
+    <aside id="about">
+      <div class="content-wrapper">
+        <p>Protect Black Lives was created by <a href="https://github.com/emmy-html" target="_blank">Emmy Jordan</a> as
+          a
+          resource to educate and spread awareness regarding the police brutality crisis that affects Black lives
+          worldwide. This website will provide racism on how to combat and educate yourself on the consequences of
+          systemic racism, and police brutality.</p>
+      </div>
+    </aside>
+    <article class="toggle-mode">
+      <p id="light-mode-desc"> </p>
+      <p id="blackout-mode-desc"> </p>
+      <label class="switch">
+        <input type="checkbox" id="themeSwitch">
+        <span class="slider round"></span>
+      </label>
+    </article>
+  </header>
+
+  <main>
+    <section id="hero">
+      <div class="content-wrapper">
+        <article class="content-container">
+          <h1>Protect
+            <span class="black-lives">Black</span>
+            <span>Lives</span>
+          </h1>
+        </article>
+        <aside>
+          <p>An open source collection of resources in the interest of protecting black lives.</p>
+          <p id="update-content">Last Updated on: <span id="date" class="date"></span> by <span id="name"
+              class="name"></span></p>
+        </aside>
+      </div>
+    </section>
+    <section id="resources">
+      <div class="content-wrapper">
+        <h2>I want to...</h2>
+        <!-- Categories -->
+        <div class="category">
+          <a href="../donate/index.html" class="category-button">Donate</a>
+          <a href="../educate/index.html" class="category-button">Educate</a>
+          <a href="../heal/index.html" class="category-button">Heal</a>
+          <a href="../petition/index.html" class="category-button">Petition</a>
+          <a href="index.html" class="category-button active-cat">Protest</a>
+        </div>
+        <h3>For Black Lives</h3>
+        <div class="tab-content">
+          <!-- Protest Tag Filters -->
+          <article>
+            <h4>Filter by <span>Topic</span></h4>
+            <div class="filter-buttons">
+              <button class="btn active-filter" id="default" onclick="findTag('all')">Show all</button>
+              <button class="btn" onclick="findTag('accessible')">Accessible</button>
+              <button class="btn" onclick="findTag('protest-megalist')">Megalist</button>
+              <button class="btn" onclick="findTag('protest-protection')">Protestor Protection</button>
+              <button class="btn" onclick="findTag('protest-tech')">Protestor Tech</button>
+            </div>
+          </article>
+          <!-- Protest Resources -->
+          <article>
+            <div class="filter-content-container">
+              <p class="filterLink protest-protection">
+                <a href="https://www.paperrevolution.org/street-medic-guide/" target="_blank">
+                Street Medic Guide from Paper Revolution</a>
+                <span class="btn tags" onclick="findTag('protest-protection')">Protestor Protection</span>
+              </p>
+              <p class="filterLink protest-protection protest-tech">
+                <a href="https://twitter.com/matthew_d_green/status/985885001542782978" target="_blank">
+                Guide to Creating A Secure iOS Password</a>
+                <span class="btn tags" onclick="findTag('protest-protection')">Protestor Protection</span>
+                <span class="btn tags" onclick="findTag('protest-tech')">Protestor Tech</span>
+              </p>
+              <p class="filterLink protest-protection protest-tech">
+                <a href="https://ssd.eff.org/en/module/privacy-students" target="_blank">
+                Privacy for Students</a>
+                <span class="btn tags" onclick="findTag('protest-protection')">Protestor Protection</span>
+                <span class="btn tags" onclick="findTag('protest-tech')">Protestor Tech</span>
+              </p>
+              <p class="filterLink protest-protection protest-tech">
+                <a href="https://ssd.eff.org/en/module/protecting-yourself-social-networks" target="_blank">
+                Protecting Yourself On Social Media</a>
+                <span class="btn tags" onclick="findTag('protest-protection')">Protestor Protection</span>
+                <span class="btn tags" onclick="findTag('protest-tech')">Protestor Tech</span>
+              </p>
+              <p class="filterLink protest-protection protest-tech">
+                <a href="https://medium.com/@EqualityLabs/anti-doxing-guide-for-activists-facing-attacks-from-the-alt-right-ec6c290f543c" target="_blank">
+                Anti-Doxing Guides for Activists Facing Attacks</a>
+                <span class="btn tags" onclick="findTag('protest-protection')">Protestor Protection</span>
+                <span class="btn tags" onclick="findTag('protest-tech')">Protestor Tech</span>
+              </p>
+              <p class="filterLink accessible protest-protection protest-tech">
+                <a href="https://docs.google.com/document/d/1615pZB11BhsR0KtvyiXfzfMUBlxZi47HzzhWHIRpxwU/mobilebasic" target="_blank">
+                Anonymize Your Online Footprint</a>
+                <span class="btn tags" onclick="findTag('accessible')">Accessible</span>
+                <span class="btn tags" onclick="findTag('protest-protection')">Protestor Protection</span>
+                <span class="btn tags" onclick="findTag('protest-tech')">Protestor Tech</span>
+              </p>
+              <p class="filterLink accessible protest-protection protest-tech">
+                <a href="https://everestpipkin.github.io/image-scrubber/?fbclid=IwAR12XwVWyg8yNO8yUVViYpjKTFkn_OrLJ1hIPMgutMxel8swvixbHqoQj6o" target="_blank">
+                Image Scrubber for Protest Photographs</a>
+                <span class="btn tags" onclick="findTag('accessible')">Accessible</span>
+                <span class="btn tags" onclick="findTag('protest-protection')">Protestor Protection</span>
+                <span class="btn tags" onclick="findTag('protest-tech')">Protestor Tech</span>
+              </p>
+              <p class="filterLink protest-protection protest-tech">
+                <a href="https://signal.org/blog/blur-tools/" target="_blank">Encrypted
+                App Signal's Blur Technology for Photos</a>
+                <span class="btn tags" onclick="findTag('protest-protection')">Protestor Protection</span>
+                <span class="btn tags" onclick="findTag('protest-tech')">Protestor Tech</span>
+              </p>
+              <p class="filterLink accessible protest-protection protest-tech">
+                <a href="https://twitter.com/ACLU/status/1266553313266368518" target="_blank">
+                  Know Your Rights While Protesting Video from ACLU (With Captions)</a>
+                <span class="btn tags" onclick="findTag('accessible')">Accessible</span>
+                <span class="btn tags" onclick="findTag('protest-protection')">Protestor Protection</span>
+                <span class="btn tags" onclick="findTag('protest-tech')">Protestor Tech</span>
+              </p>
+              <p class="filterLink protest-protection protest-tech">
+                <a href="https://twitter.com/josephfcox/status/1267539699293282304?s=21" target="_blank">PDF Guide to
+                  Protecting Your Digital Privacy While Protesting</a>
+                <span class="btn tags" onclick="findTag('protest-protection')">Protestor Protection</span>
+                <span class="btn tags" onclick="findTag('protest-tech')">Protestor Tech</span>
+              </p>
+              <p class="filterLink protest-megalist protest-protection protest-tech">
+                <a href="https://twitter.com/lockdownurlife/status/1267590797576286208" target="_blank">Digital Security
+                  Tips: A Thread for Activists, Protestors, Journalists and Friends + Family of Attendees</a>
+                <span class="btn tags" onclick="findTag('protest-megalist')">Megalist</span>
+                <span class="btn tags" onclick="findTag('protest-protection')">Protestor Protection</span>
+                <span class="btn tags" onclick="findTag('protest-tech')">Protestor Tech</span>
+              </p>
+              <p class="filterLink accessible protest-megalist protest-protection">
+                <a href="https://issuu.com/nlc.sf.2014/docs/beyondthestreets_final" target="_blank">26 Ways to Be in the
+                  Struggle Beyond the Streets</a>
+                <span class="btn tags" onclick="findTag('accessible')">Accessible</span>
+                <span class="btn tags" onclick="findTag('protest-megalist')">Megalist</span>
+                <span class="btn tags" onclick="findTag('protest-protection')">Protestor Protection</span>
+              </p>
+              <p class="filterLink protest-protection">
+                <a href="https://www.cnn.com/2020/06/02/us/how-to-protest-safely-know-your-rights-wellness-trnd/index.html"
+                  target="_blank">Know Your Rights via CNN</a>
+                <span class="btn tags" onclick="findTag('protest-protection')">Protestor Protection</span>
+              </p>
+              <p class="filterLink protest-protection protest-tech">
+                <a href="https://twitter.com/ACLU_SoCal/status/1266555086890692608" target="_blank">Film the Police
+                  Initiative from ACLU SoCal</a>
+                <span class="btn tags" onclick="findTag('protest-protection')">Protestor Protection</span>
+                <span class="btn tags" onclick="findTag('protest-tech')">Protestor Tech</span>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div id="contribute">
+      <div class="content-wrapper">
+        <article>
+          <h2>Want to
+            <span>
+              <a href="../contribute/index.html">contribute?</a>
+            </span>
+          </h2>
+          <p>Protect Black Lives is an open source project, meaning we would love
+            any and all contributions! If you have a resource that isn't listed that
+            you would like to add, you can read <a href="../contribute/index.html">more</a>
+            about how to contribute, even if you don't know how to code!</p>
+        </article>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/plugins.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/filter.js"></script>
+</body>
+
+</html>

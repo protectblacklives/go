@@ -1,0 +1,153 @@
+@import "variables";
+@mixin link-transition {
+    -webkit-transition: 1s color;
+    transition: 1s color;
+}
+$blue-border: 2px solid $blue;
+
+body[data-theme="light"] {
+    /* Universal Styles */ 
+    background: $white;
+    color: $black;
+    a:link,
+    a:visited {
+        color: $black;
+    }
+    a:hover {
+        border-bottom: $blue-border;
+        color: $red;
+        @include link-transition;
+    }
+    /* Header */
+    /* Active Navigation Link */
+    .active-nav {
+        border-bottom: $blue-border;
+        color: $red;
+        &:visited {
+            color: $red;
+        }
+    }
+    h2 {
+        color: $red;
+    }
+    h3 {
+        color: $blue;
+    }
+    b {
+        color: $red;
+    }
+    .code-sample {
+        color: $blue;
+    }
+    /* Toggle Switch */
+    header {
+        .toggle-mode {
+            #light-mode-desc::before {
+                content: "Light Mode";
+              }
+            #blackout-mode-desc::before {
+                display: none;
+            }
+        }
+    }
+    /* Hero */
+    #hero {
+        /* Protect Black Lives Intro */ 
+        .content-container {
+            border: 10px solid $blue;
+            span.black-lives {
+                color: $red;
+            }
+        }
+            /* Last Updated by Section */
+    #update-content {
+        text-transform: uppercase;
+        .date {
+            color: $red;
+            font-weight: $bold;
+        }
+        .name {
+            color: $blue;
+            font-weight: $bold;
+        }
+        }
+    }
+    /* Resources Tabs */
+    #resources {
+        h3 {
+            color: $red;
+        }
+        /* The Categories */
+        .category {
+            background: none;
+            overflow: hidden;
+
+        }
+        /* Category buttons */
+        .category-button:hover {
+            background-color: $blue;
+            color: $white;
+        }
+        /* Changes color depending on active page */
+        .category-button.active-cat {
+            background: $red;
+            color: $white;
+            &:hover {
+                background: $blue;
+            }
+        }
+        .tab-content {
+            border: none;
+            span {
+                color: $dark-purple;
+              }
+            .tags {
+                color: $white;
+            }
+            span.tags {
+                &:nth-of-type(even) {
+                    background: $red;
+                }
+                &:nth-of-type(odd) {
+                    background: $blue;
+                }
+            }
+            /* Filter buttons */ 
+            .btn {
+                background: none;
+            }
+            /* Add a background color to the button on hover */
+            .btn:hover {
+                background: $red;
+            }
+            .btn:not(.active-filter) {
+                background: $blue;
+                color: $white;
+                &:hover {
+                    background: $dark-purple;
+                    color: $white;
+                }
+            }
+            /* Change background to active class */
+            .btn.active-filter {
+                background: $red;
+                color: $white;
+                &:hover {
+                    background: $dark-purple;
+                }
+            }
+        }
+    }
+    /* Contribution Section */
+    #contribute {
+        span {
+            a:link,
+            a:visited {
+              color: $blue;
+            }
+            a:hover {
+              color: $dark-purple;
+            }
+          }
+    }
+}
