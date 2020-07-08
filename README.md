@@ -4,6 +4,14 @@
 **Protect Black Lives** was created in the interest of protecting all Black lives, in direct response to the world's
 protesting of George Floyd's tragic murder. This project has no affiliation with any existing organizations, and was created by an [individual](https://github.com/emmy-html) hoping to spread awareness and education on the effects of systemic racism and how we can enact change.
 
+## Contributions
+
+Please review our [guidelines](https://protectblacklives.github.io/go/contribute/#submission) before contributing your resource.
+
+**Don't know how to code?** 
+
+Don’t know how to code, but still want to help? No problem! You can contribute your resource or suggestion by submitting it via this [form](https://forms.gle/sMTRUnXhTj4hdm127).
+
 ## Want to contribute a resource you've found? Submit a pull request!
 
 Any resource that isn’t already listed or needs to be updated is welcome to be submitted via a pull request. All contributions involving improving the accessibility of this website are also more than welcome!
@@ -22,7 +30,3 @@ If you have a resource that has multiple types, feel free to add it to both file
 * If your topic doesn't exist, feel free to create a new one with an appropriate name!
 6. Add a comment **above** your resource that says `Submitted by [your name]`
 You're done! Submit your pull request and wait for approval.
-
-**Don't know how to code?** 
-
-Don’t know how to code, but still want to help? No problem! You can contribute your resource or suggestion by submitting it via this [form](https://forms.gle/sMTRUnXhTj4hdm127).
